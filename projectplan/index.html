@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Assessment Task 3 Group # 9</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Assessment Task 3 Group # 9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- borrowed favicon from canvas lol -->
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://instructure-uploads-apse2.s3.ap-southeast-2.amazonaws.com/account_95950000000000001/attachments/25576945/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+  
+  <script type="module" crossorigin src="/RMIT-IITA3/assets/main.18edea72.js"></script>
+  <link rel="stylesheet" href="/RMIT-IITA3/assets/main.f6777af4.css">
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- borrowed from https://commons.wikimedia.org/wiki/File:RMIT_University_Logo.svg -->
+        <a href="#"><img src="/RMIT-IITA3/images/RMIT_University_Logo.svg" alt="RMIT" class="rmit-logo"> </a>
+        <!-- menu toggle. only visible in mobile -->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="nav-list" class="nav-list">
+            <li><a href="/RMIT-IITA3">Team Profile</a></li>
+            <li><a href="/RMIT-IITA3/tools">Tools</a></li>
+            <li><a href="/RMIT-IITA3/projectplan">Project Plan</a></li>
+            <li><a href="/RMIT-IITA3/skillsandjobs">Skills & Jobs</a></li>
+            <li><a href="/RMIT-IITA3/groupreflection">Group Reflection</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Description -->
+    <section class="margin-top-500">
+      <div class="container">
+        <h1 class="fs-primary-heading fw-bold margin-bottom-400">Project Plan</h1>
+        <h3 class="fs-600 fw-bold">Project Description</h3>
+        <p>The project that we will dive deeper into in Assignment 3 is the app we presented previously in Assignment 2. Our
+          project is a fitness-focused mobile app that will use your phone&rsquo;s built-in camera to watch you do compound
+          lifts such as squats, bench-press or deadlifts and analyse your lifting form. This app will be helpful for users
+          interested in fitness and health and for beginners looking to learn the correct technique who cannot afford to get a
+          personal trainer. In this case, an app would be great for learning the proper technique.</p>
+        <p>Apps are a fast-growing trend in the IT industry; most people who have access to mobile phones use apps. Apps are
+          easy to access and often free or very cheap to use. According to the Check Point State of Mobile Security 2021 report,
+          many businesses are also looking to invest in security systems protecting app users from outsider threats. New
+          authentication methods are being introduced, and instead of traditional passwords that are easy to use, other methods,
+          such as security keys and passkeys in iCloud keychain, are becoming more popular. These two methods only work on Apple
+          devices, making them only user-friendly for some.</p>
+        <p>Another current trend is called &lsquo;Super Apps&rsquo;, which essentially is an app that offers solutions to serve
+          multiple purposes. Instead of just an app that offers single solutions, the IT industry now vouches for apps that
+          benefit users in different areas. An example is Facebook changing from a social media app to a marketplace and
+          advertising app. Currently, Facebook users can sell used items on the marketplace, and companies can buy sponsored
+          space on Facebook to promote their products or business. Another IT industry trend, e-commerce, took off during covid
+          and has grown rapidly since. Mobile apps for e-commerce are taking over the original e-commerce websites, and
+          e-commerce businesses have been forced to adapt to this change. If the companies don&rsquo;t jump on this trend, they
+          will lose a lot of customers. Mobile commerce is user-friendly and easy to use, and it is crucial to ensure the
+          business stays in the competition.</p>
+        <p>Our group has varying interests; a few of us are interested in IT security, which would play a part in developing any
+          app. As the app's popularity rises, so do the threats. An important consideration is focusing on information privacy
+          laws and data protection, which should be part of developing an app. A few of the group members are interested in
+          software engineering, and other areas of interest our group has are operations and solutions management. Software
+          engineers can also build apps, as they have extensive knowledge of computer systems and developing computer systems.
+          These skills help build web-based systems such as an app.</p>
+      </div>
+    </section>
+    <!-- Overview -->
+    <section>
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Overview</h3>
+        <p>Our idea is to create a fitness/strength training-focused mobile app that will use your phone's built-in camera to
+          watch you do compound lifts such as squats, bench-press or deadlifts and analyse your lifting form. This app would use
+          real-time image recognition software to track information about the effort exerted in each lift. It will also provide
+          insight into the centre of mass of the barbell and its motion over time; the user's body proportions, such as how far
+          you are leaning forward and how deep your lift is. The application will then provide information on how safe your
+          posture is. To analyse a user's form, we will use a scale of difficulty called RPE (rating of perceived effort) where
+          zero would be at rest, five might be challenging to lift, and 10 is our absolute maximum weight lift. Server-side
+          processing will be used for all information gathering and then displayed locally on the app on your device.</p>
+        <p>Looking at the bigger picture, our project is designed to help users gain confidence in their ability no matter where
+          they start. Whether you have been training for years or thinking about starting to train, our application will ensure
+          that the exercises you complete are completed with the proper form and suitable weight to ensure positive results. We
+          hope users can develop their fitness/strength training knowledge using our application. Creating this application will
+          help users ensure they are not living a sedentary lifestyle and promote a healthy, balanced and active lifestyle
+          instead.</p>
+      </div>
+    </section>
+    <!-- Motivation -->
+    <section>
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Motivation</h3>
+        <p>The motivation for this project is to provide an app that would allow users who engage in weight training to perform
+          safer and more effective exercises. As health science can be a confusing topic and exercise is potentially dangerous,
+          it is essential to have an app that users can help to keep themselves informed. The digitalisation of the world and
+          the use of technology to enhance productivity is in-line with current IT trends. The app would help people train users
+          safely, which would result in reduced gym-related injuries. When performed correctly, users will also get more out of
+          their workouts and improve their gym performance, leading to increased strength. Performance over time is tracked by
+          doing a session of max lifts, and then in a few weeks, the user can repeat the max lifts and compare results. The app
+          will also benefit users who train alone, as they cannot always rely on a coach. When the user exercises at the gym
+          without a coach, the coach depends on the user's ability to track what RPE the user's heaviest lifts were to gauge the
+          requirement to increase the weight each week.</p>
+      </div>
+    </section>
+    <!-- Landscape -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Landscape</h3>
+        <p>There are numerous fitness and health applications on Google and Apple App Store, which indicates market interest for
+          such products. Popular gym-focused apps analyse workout data, like heart rate and calories burned, and are more
+          general fitness guidance apps with scheduling and sample workout routines.</p>
+        <p>From current gym-themed apps available, none of them have implemented exercise form correction as a feature yet. Poor
+          exercise form is unfortunately one of the main contributors to weightlifting-related injuries. An application with
+          such a feature would be beneficial to many beginners and even experienced gym goers.<br /><br /> Barbell tracking apps
+          are used by weightlifters/powerlifters, and there are a couple of them already on the market. One of the most popular
+          ones is WL Analysis by Karol Smolak, with over 50k downloads and a rating of 4.9 stars from 5. User reviews confirm
+          that the app does a good job tracking the path of the barbell but does not offer lifting form feedback. The
+          application screenshot in Figure 1 shows that the barbell motion leaves a trace that can be analysed further in the
+          app. Data such as velocity, power, force, and horizontal displacement are available in the app for the user to
+          analyse.</p>
+        <div class="even-columns">
+          <div>
+            <img src="/RMIT-IITA3/images/plan-wl-analysis.png" alt="" height="588px">
+            <p><strong>WL Analysis</strong>screenshot</p>
+          </div>
+          <div>
+            <img src="/RMIT-IITA3/images/plan-ai-fitness.png" alt="" height="588px">
+            <p><strong>Ai Fitness</strong>tracked body</p>
+          </div>
+        </div>
+        <p>Another barbell tracking app with over 10k downloads is <strong>BarPath</strong> by David Nugent (<a
+            href="https://play.google.com/store/apps/details?id=com.davidnugent.barpath">https://play.google.com/store/apps/details?id=com.davidnugent.barpath</a>).
+          With BarPath user has to upload a video to get it analysed by app Ai system. From user reviews it stands out that it
+          is not too user friendly as it converts videos to photos and saves each frame as a separate picture therefore making
+          analysing videos longer than few reps too resource hogging. Also form correction is not offered in this application.
+        </p>
+        <p>Exercise form correction together with barbell tracking has not been implemented in any of the gym and weightlifting
+          apps available.</p>
+        <p>There are already couple of mobile applications using Ai technologies, such as image recognition and body movement
+          tracking and prediction from camera feed, testing them indicated that the technology is there and can be implemented
+          in our app idea.</p>
+        <p><strong>FitYoga </strong>&nbsp;is a great yoga app that offers real time audio feedback about posture correctness
+          while performing asanas. While following instructors&rsquo; movements from the screen, app also shows an indicator
+          from 0-100% on a red-green dial of how correct your posture is following the routine. This is a great example of how
+          AI can be used for real time workout tracking, in this case yoga.</p>
+        <p><strong>FitnessAI</strong> is another app that uses motion tracking for repetition counting. It has large database
+          with over 150 different motion tracked weighted and body weight exercises. Other features are nutrition planning, body
+          measurement improvement tracking tools. To analyse exercise, form a video has to be uploaded via the app and it will
+          be then analysed against the database exercises.&nbsp;</p>
+        <p><strong>Insane AI: Camera Workouts</strong></p>
+        <p>This is a home workout application that has gamified workouts. The app utilised body motion tracking and user earns
+          points, trophies and level ups while following exercise guide. Desired motion range is shown as a touch point on
+          screen, user must reach for those zones to earn points while going through exercise program.</p>
+        <p>The landscape for simple to use weightlifting application with posture correction and data analysis features seems to
+          be favourable and other products on the market indicate that there is a need for such application.</p>
+      </div>
+    </section>
+    <!-- Project Plan: Aims -->
+    <section>
+      <div class="container">
+        <h2 class="fs-secondary-heading margin-bottom-400">Project Plan</h2>
+        <h3 class="fs-600 fw-bold">Aims</h3>
+        <p>The aim of this project is "Learn correct form at the gym". Learning the correct from at the gym through an app has
+          multiple steps to complete before the correct form is achieved</p>
+        <ul role="list">
+          <li>Record yourself doing the exercise (squat, bench press, deadlift etc)</li>
+        </ul>
+        <p>This part is a vital part of the app's functionality, as filming the user doing the exercise is going to give the app
+          the data it will need to be able to analyse the correct form. The goal is that the user learns the correct lifting
+          technique and will no longer receive notifications on how to correct their form, as it will be perfected while using
+          the app.</p>
+        <ul role="list">
+          <li>Wait for the app to analyse the video and read the prompts to correct the form</li>
+        </ul>
+        <p>In this step the app will scan the video of the user doing the exercise and give prompts and tips for the user on how
+          to correct their form. Such as, "keep your back straight", "keep your neck straight", or "point your knees out". After
+          this the user would repeat step 1 and take into consideration the prompts the app provided and try to apply them in
+          the next set. This step will provide information on the correct technique for the user so they can consider this in
+          their next set. The goal is for the user to fix the motion while doing the exercise.</p>
+        <ul role="list">
+          <li>Track your progress</li>
+        </ul>
+        <p>The app also provides an option to track the weight used and sets completed so that the user can follow their
+          progress week by week and progressively overload to make sure they are making progress at the gym. The goal is that
+          the user will continuously improve their performance at the gym by getting stronger and improving their technique.</p>
+        <p>The most important steps would be 1 and 2, as the main idea of the app is to have the app record motion while the
+          user is performing the exercise and analysing it, and for the user to correct their form after the app has finished
+          the analysis. Step 3 is not compulsory and can be optional if the user wishes to track their strength progress.</p>
+      </div>
+    </section>
+    <!-- Plans and Progress: Context -->
+    <section>
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Context</h3>
+        <h4 class="fw-bold">How it began:</h4>
+        <p>Many apps are available today focused on health and fitness, with a handful being centrally focused around using a
+          camera to analyse a person while they lift. The idea for our application comes from a noticeable need for features
+          around safety and lifting technique as well as performance analysis, with the focus being on strength training and
+          powerlifting. The current selection of apps available today are mostly focused on bodybuilding and/or yoga.</p>
+        <p>Compared to bodybuilding where the main idea is to complete many reps at a lower weight to cause localized muscle
+          damage that will promote muscle growth; powerlifting is about training the body to better activate your muscles to
+          lift increasingly larger and larger weights. Due to the massively increased time spent lifting very heavy weights, a
+          powerlifter is more at risk of hurting themselves if they lift with incorrect or outright dangerous technique.</p>
+        <p>The main concepts involved in lifting safety are ensuring you always have a good centre of gravity, ensuring the bar
+          follows a straight up and down path, and ensuring you do not arch your back dangerously when under load. These safety
+          factors can be hard to keep track of when lifting close to your maximum weight, which is why many athletes will record
+          their gym sessions for later review by either themselves or their coaches.</p>
+        <p>By creating an app that focuses more on compound lift technique and less around tracking reps and calories, we can
+          assist athletes of any skill level with ensuring they are always lifting safely at times when they do not have
+          professional coaching available as an option.</p>
+        <p>Additionally, when training at an athlete level, it is important to have back and forth feedback with your coach
+          about how training is going between PT sessions and by tracking things such as the bar movement path and speed at
+          various weights, we can provide coaches with a tangible way of measuring performance with statistics instead of from
+          the athlete describing how they felt during the session.</p>
+        <h4 class="fw-bold">How it has progressed:</h4>
+        <p>After the initial proposal of this project, we conducted many meetings to decide on the direction we are heading with
+          the project and the approach we would take with its development. We have established indicative timelines that will
+          shape minimal viable product versions for which we have made draft plans. We have also conducted challenge and
+          forecast assessments to predict and allocate time for foreseeable challenges and considerations that will need to be
+          undertaken as a requirement for this project to stay on track.&nbsp;</p>
+        <p>We have conducted extensive Research and development initiatives in order to facilitate a strong understanding of the
+          types of systems that will be required to launch this project. This included research into cloud computing platforms
+          that could be utilised to host a range of required servers needed for the app to function, including user database and
+          machine learning data storage. Two notable research initiatives the team carried out include Cybers security and
+          machine learning, which are obviously very strong forefront considerations that will be important for the deployment
+          and launch of this service and be a crucial part of its success. Another essential aspect of this project that has
+          been researched, although it will require extensive research for the deployment of this project, is the privacy policy
+          that we will implement, which will stipulate our user data handling policy and procedures in accordance with General
+          Data Protection Regulation. This law is set out by the European Union and is vastly interpreted as the global standard
+          of data protection and privacy regulations.&nbsp;</p>
+        <h4 class="fw-bold">What stage of the plan you are up to:</h4>
+        <p>In terms of the production timeline that we have outlined within this document, we have established the foundational
+          groundwork for the project up to the Design and predevelopment phase. We have completed business analysis reports,
+          including the competition/alternate applications on the market and a differential analysis outlining the differences
+          our platform will have to these opposing options. We have conducted and outlined research and development pathways to
+          lay out the roadmap with how this platform will be developed and launched publicly, with our minimal viable product
+          versions and project milestones. We have also constructed fundamental plans and documentation for project continuity
+          so that all project members are on the same page with the current state of the project and the direction in which it
+          is projected to head. In addition, a member of the project team has drawn up some conceptual framework and design
+          mock-ups that could be shown to a client or investor to demonstrate an interactive proof of concept with what the
+          application could accomplish should it be developed. This also provides a starting point for the development team to
+          start structuring the front-end and back-end of the app. This can expedite production as it allows the development
+          team to initiate the app's construction whilst the design team works simultaneously to improve upon the user interface
+          and user experience design.</p>
+        <h4 class="fw-bold">Improvement from alternative apps:</h4>
+        <p>Fitness applications are being used widely every day by millions of people. Our application differs from the ones
+          available on the market by bringing together weightlifting posture correction and bar travel path analysis in one
+          user-friendly package. None of the current applications on the market offers these two features together.
+          Nevertheless, the weightlifting and fitness applications have come a long way and have implemented many beneficial
+          features worth investigating in further versions of our application. Utilising wearable sensors adds another level of
+          sophistication in data analysis possibilities. For example, heart rate offers a great insight into the overall
+          exercise session. Fitness applications use heart rate to analyse how working out will have beneficial long-term
+          effects on cardiovascular health. On the other hand, when a workout gets too intense abnormal heart rate notification
+          could prevent causing damage to health.&nbsp;</p>
+        <p>To have the whole body in the frame of the camera whilst exercise is being performed, a mobile device got to be
+          placed around 2 metres away from the subject. This creates a problem for the display screen because the size is
+          difficult to read. Real-time audio regarding posture correctness can be helpful in this case. FitYoga application also
+          uses a coloured dial from zero (colour red) to hundred (colour green) on display while exercise is being performed to
+          indicate the correctness of yoga pose.</p>
+      </div>
+    </section>
+    <!-- Core Solution -->
+    <section>
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Core Solution</h3>
+        <h4 class="fw-bold">Features</h4>
+        <ul role="list">
+          <li>Workout tracking</li>
+          <li>Bar trajectory tracking</li>
+          <li>Social/friends element</li>
+          <li>AI form tracking</li>
+          <li>Audible real time form correction</li>
+          <li>Leader board with friends</li>
+          <li>Web portal</li>
+          <li>Connectivity with wearables</li>
+        </ul>
+        <h4 class="fw-bold">User Data and Privacy (Milla/Will )</h4>
+        <p>Data and privacy protection of our users is a key influence into the planning and designing of our IT database and
+          content storage systems. Strict regulations on industry standards as set out by the GDPR is the backbone of our ideal
+          compliance policy and procedures. This standards stipulate the way in which personal data is handled, any way this
+          data is handled (either manually or automatically) either directly by this service or any third party services that
+          are utilised for this service. Personal data relates to sensitive information that could directly or indirectly
+          identify a user, this includes but is not limited to names, email addresses and phone numbers. Other information such
+          as ethnicity, location, religious beliefs, gender, political opinions and web cookies are also classified as personal
+          data, such as payment information, SMS data and health data. Data processing includes data performed on a device or
+          application that has been translated to usable formation. Examples of data processing are collecting, organizing,
+          storing and erasing data. These requirements for compliance could be met by means of enforcing employee two factor
+          authentication for access to systems and highly confidential data, End to end encryption, Data privacy policy, limit
+          all access to personal data, keeping documentary evidence of consent and allowing data subjects to withdraw previously
+          given consent at any given time. Data processing includes data performed on a device or application that has been
+          translated to usable formation. Examples of data processing are collecting, organizing, storing and erasing personal
+          data.</p>
+        <h4 class="fw-bold">Wireframe/Concept Design</h4>
+        <div>
+          <div class="img-row">
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-welcome.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-signup.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-login.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-homepage.jpg" alt="" height="500px">
+            </div>
+          </div>
+          <div class="img-row">
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-selectworkout.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-statistics.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+              <img src="/RMIT-IITA3/images/plan-mockup-profile.jpg" alt="" height="500px">
+            </div>
+            <div class="img-column">
+            </div>
+          </div>
+          <h4 class="fw-bold">System Schematics and Deployment</h4>
+        <p>The production of the application could utilise the Xamarin framework to facilitate the creation of the platform for
+          both Apple and Android devices which could accelerate the production development timeline. This framework is provided
+          by Microsoft and leverages .Net and C#, which are very common and easy-to-learn programming languages and are skills
+          that are very easy to find in the workforce, which help with the process of hiring developers for the team.&nbsp;</p>
+        <p>Cloud computing could be utilised through platforms such as Azure or Amazon Web Services to facilitate machine
+          learning, storage and database servers as a requirement for the application to complement the end-user experience.
+          These servers could be the barebone structure of the application's main features, including form tracking, user log in
+          and social media connectivity. Video processing could be offloaded to one of these servers to analyse and compare data
+          from previous datasets, which in combination with machine learning and artificial intelligence platforms, could be
+          utilised to improve efficiency and data/statistical analysis. This aspect of the service could make use of
+          Google&rsquo;s ML kit, which is a lightweight computer vision API that is designed for tracking the movement of the
+          human body. Microsoft's Azure platform provides a service known as Azure Data Explorer, which can be used for instant
+          visibility into very large raw datasets with near real-time analysis for identifying performance, trends, and
+          anomalies.&nbsp;</p>
+      </div>
+    </section>
+    <!-- Phase development  -->
+    <section>
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Phase development </h3>
+        <h4 class="fw-bold">Planning</h4>
+        <p>In the planning stage, we will create the road to follow in developing our application. The main things we will need
+          to work out in this stage will be the timeframe, what features we would like to have in our application and the
+          framework in which we will complete the application. Firstly, we will need to know the timeframe in which we feel
+          comfortable building the application. This is important because there are so many different aspects of the application
+          that need to be completed at the same time, and to make sure they all come together at the end, planning the timeline
+          is crucial. Following this, we will need to decide what features we will need to have completed so we can launch the
+          application. To bring a product to market, we will need to have at least 4 to 5 exercises so that our application can
+          do as advertised. Lastly, we will need to plan the frameworks for our application. This will be the bones we build our
+          application on, so it is essential to research the best technologies to create the best application possible.</p>
+        <h4 class="fw-bold">Business analytics</h4>
+        <p>This stage is where we will research multiple categories like competitors, demographics, market size, and anything
+          that will help us make our application competitive in the marketplace. Business analytics is essential because if we
+          do not conduct the research and find where our application can fit in the marketplace, we will not have a viable
+          product to give users. With fitness applications being so popular now as people are becoming more health conscious, we
+          have decided to fit the market of people looking for safety in the gym with our tracking software to ensure that they
+          exercise safely and efficiently. The target demographic for our application is anyone who does compound exercises, as
+          they will be the first exercises we make for our application. These people are commonly powerlifters and gym goers. As
+          the health application sector is becoming increasingly popular and people want to look after themselves better, our
+          application can stand out in this market.</p>
+        <h4 class="fw-bold">Design and predevelopment</h4>
+        <p>Design and predevelopment will be the first stage, where we develop ideas on what your application will look like and
+          how our team believes we will accomplish this. We will create the colours, fonts, graphics, and necessary components
+          that will make up the UI. Initially, in this stage, we will plan what type of experience we want our users to have and
+          how we will deliver that through visuals. Once we have planned out what we want them to see, we create mock-ups and
+          wireframes so we have a good idea of what the finished product will look like. Following this, we get to work on
+          working out the best processes to make these come to life, and we can create an excellent experience for our users. To
+          make sure our application is as attractive as possible we will have to be creative and make sure our UI is both highly
+          intuitive and beautiful.</p>
+        <h4 class="fw-bold">Ui design</h4>
+        <p>In this project phase, we will see user experience (UX) and user interface (UI) developers coming together to build
+          the application's structure and flow. This process includes aspects of how the application should look, therefore
+          focusing on the style/design of the application and user experience. Important questions will be asked in this phase,
+          such as what the application is meant to do and what differentiates it from its competitors. These solutions will be
+          found through rigorous research on the fitness/training market, creating mock-up designs of the application, creating
+          test prototypes of the application and testing the final product on real-life users. In this phase, developers will
+          use PowerBI, Adobe XD, Figma, Adobe Photoshop and Adobe Illustrator to create the application. Some potential problems
+          in this phase include a need for more communication between developers and designers. A lack of communication may
+          result in the design of the application not being accepted and, in the worst-case scenario, the application not being
+          able to do what it is required to do.</p>
+        <h4 class="fw-bold">Pre-Development state</h4>
+        <p>In this phase of the development, we will take the initial briefs and wireframes of the project and try to form
+          tentative front-end objects. This will then help with the construction of the back-end development and kick-start this
+          process. This phase will focus heavily on the initial planning of the different aspects of development, including but
+          not limited to timelines, requirements, code segregation, and application features. It is crucial to ensure that
+          timelines and requirements set by the pre-development team are accurate but, more importantly, achievable for the
+          Front-end and Back-end developers. Failure to create accurate timeframes may mean that the project is pushed back,
+          which may result in extra costs being added to the project to help carry the project forward past the set dates. It
+          may also mean displeased developers and angry consumers waiting for the project. The application's features also need
+          to be finalised in this phase. It will become a nuisance if the developers start constructing the application and are
+          told that a feature is unnecessary or needs to be added now. Communication will be critical in this phase to ensure
+          that the front-end and back-end developers receive the correct information to build the project.</p>
+        <h4 class="fw-bold">Frontend and Backend development</h4>
+        <p>During this development phase, the development team, which is comprised of backend and frontend programmers, work in
+          conjunction with the user interface and experience design team to start to lay out the roadmap for how the app will be
+          developed. This includes creating placeholder frontend UI elements so that the backend developers can focus their
+          attention on creating the systems that will run the app itself before passing it back to the frontend team to change
+          the placeholder text and establish connections between the frontend and backend. This process will go around in
+          circles a bit whilst the two sections of the development team make progress and implement necessary changes for the
+          app's programming. They will also have to make connections with the cloud-based computing systems and servers that
+          will drive the interconnectivity of the app. The team will produce a minimum viable product which can be further put
+          forwards to the executives for approval and enhancement to meet minimum requirements and stakeholder expectations
+          before moving onto the testing and quality assurance phase to ensure that the app is optimised and ready for public
+          release.</p>
+        <h4 class="fw-bold">Testing</h4>
+        <p>Testing the app is a crucial part of creating an app, as it will provide verification for the expected business and
+          technical requirements. Testing of the app will be a process of analysing and validating it for functionality before
+          it can be presented to the public users. To successfully test our app, we need to test the app in different operating
+          system versions, screen resolutions and network bandwidths. This will ensure that the app functions perfectly across
+          multiple devices. This is an essential aspect as mobile devices develop continually, so the app has to be able to
+          function in the new advanced devices. App testing is vital for the business to ensure the app runs smoothly, as
+          negative user experience can reduce profitability. App crashes can lead to an immediate deletion of the app and
+          negative reviews, and optimising a positive experience for the user will lead to higher profitability for the
+          application.&nbsp;</p>
+        <p>Potential challenges our app might face in this phase could be the video quality the user's device can record.
+          Different devices have different quality videos, and varying screen sizes could be an issue. Today's customers have
+          high demand on the functionality and easy use of an app, and our app could be questioned for the easy usability for a
+          couple of reasons. Customers would need a high-quality phone camera, with a stable phone holder and the focus would
+          have to be on the user doing the exercise, otherwise the video might get blurry.</p>
+        <h4 class="fw-bold">Finalisation and launch</h4>
+        <p>The people involved in marketing will have to build anticipation among the audience by promoting the product prior to
+          the launch. If awareness of the product is prevalent, it will help to drive more sales before it is actually launched
+          and curb loss of revenue. Have enough written and visual content available before the launch &ndash; such as
+          descriptions, logos, and colour schemes decided upon. The first thing that must be done is to create an official
+          landing page that is well-designed and enticing to the audience. To connect with visitors and keep them up to date
+          with the product, the website must allow them to input their emails so they can receive updates directly. The
+          utilisation of social media to connect with potential consumers and increase brand awareness is also necessary. Reach
+          out to bloggers, journalists, influencers, and public relations representatives to create more interest in the
+          product. Plan a launch party that will demonstrate the product to investors. Make it clear to the investors what the
+          product is about and how it is unique or differentiated from other existing products. It will hopefully attract them
+          enough that they can provide funding and awareness of the project so that it will become viable to expand its goals.
+        </p>
+        <h4 class="fw-bold">Support phase</h4>
+        <p>Good handling of customer support will improve the public perception of a company, facilitate the continuous
+          improvement of a product, and generate consumer loyalty to a brand. After the launch, check customer reviews of the
+          product and take all criticisms into consideration. If people leave a scathing review, do not respond back with
+          negativity but approach them with politeness and empathy. Provide a short-term solution to their immediate concerns
+          and a long-term one about how the development team has taken note of their issues and will aim to improve the product.
+          Customers can access support through means to ensure that they can make contact &ndash; such as live chat, email, and
+          phone calls. It is preferable that their simple inquiries be handled through email and complex inquiries through phone
+          calls. It can be challenging for employees to answer all incoming calls, and also quite time consuming for them to
+          deal with calls regarding simple inquiries. It is crucial to provide a guide that answers the most frequently asked
+          questions among customers as well as any other general information that is easily accessible. Customers will be
+          instructed that they browse through these help guides first before they contact customer support as they may be able
+          to resolve the issue themselves.&nbsp;</p>
+      </div>
+    </section>
+    <!-- Project Milestones -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Project Milestones</h3>
+        <table class="margin-bottom-400 table-border">
+          <tbody>
+            <tr>
+              <td class="fw-bold" width="140"><p>Minimum Viable Product Versions</p></td>
+              <td class="fw-bold"><p>Outline of Features Implemented</p></td>
+            </tr>
+            <tr>
+              <td><p>1</p></td>
+              <td>
+                <p>Offline only</p>
+                <p>Only 3 basic compound lifts</p>
+                <p>Historical comparison</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>2</p></td>
+              <td>
+                <p>Multi exercise</p>
+                <p>Marketing and advertising</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>3</p></td>
+              <td>
+                <p>Web interface</p>
+                <p>Social media imbedded experience</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="margin-bottom-400 table-border">
+          <tbody>
+            <tr>
+              <td class="fw-bold"><p>Milestones</p></td>
+              <td class="fw-bold"><p>Time to complete</p></td>
+            </tr>
+            <tr>
+              <td><p>Offline only functionality - have the application be able to work without an internet connection.</p></td>
+              <td><p>2 weeks</p></td>
+            </tr>
+            <tr>
+              <td><p>3 basic compound lifts - accurately record, map, and give feedback for 3 basic compound lifts.</p></td>
+              <td><p>1 week</p></td>
+            </tr>
+            <tr>
+              <td><p>Ability to compare previous lifts - have previous lifts saved, compare and give feedback, and see the
+                  progression.</p></td>
+              <td><p>2.5 weeks</p></td>
+            </tr>
+            <tr>
+              <td><p>Multi-exercise analyses - be able to analyse more than one exercise at a time.&nbsp;</p></td>
+              <td><p>1.5 weeks</p></td>
+            </tr>
+            <tr>
+              <td><p>Web interface - be able to check statistics and data in a web application for more detailed breakdowns</p></td>
+              <td><p>1 week</p></td>
+            </tr>
+            <tr>
+              <td><p>Social media experience - be able to share progress with friends on social media and have built-in social
+                  functions.</p></td>
+              <td><p>1 week</p></td>
+            </tr>
+            <tr>
+              <td><p>Advertising and Marketing - have promotions and internal ways to market the application as well as an
+                  in-built advertising platform.</p></td>
+              <td><p>1.5 weeks</p></td>
+            </tr>
+            <tr>
+              <td><p>Workout program suggestions &ndash; after the application learns more about you it can suggest new exercises
+                  to try that will help you improve.</p></td>
+              <td><p>1 week</p></td>
+            </tr>
+            <tr>
+              <td><p>Nutrition planning &ndash; depending on what exercises and workouts you do the application can suggest a meal
+                  plan to help reach your goals</p></td>
+              <td><p>1 week</p></td>
+            </tr>
+            <tr>
+              <td><p>Biometric tracking &ndash; be able to import data from other applications and sensors to get full biometric
+                  data on a person and help highlight areas that need improvement.</p></td>
+              <td><p>2 weeks</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The idea for the app came from our group member Kristian, who presented this idea in his Assessment 1 for this
+          subject. Our group decided to use Kristians idea for Assessment 3, as we liked his idea, and he also got one of the
+          best grades out of our group members. During out meetings we have discussed the roles our group members are taking in
+          the plan to develop the app, and we have discussed how we can present the app idea to outsiders and what are the steps
+          to follow to make the app better.</p>
+      </div>
+    </section>
+    <!-- Roles -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Roles</h3>
+        <p><strong>Project manager- Will</strong></p>
+        <p>The project manager is a person who constantly oversees the progression of the project, assigns tasks to team
+          members, and makes sure that deadlines are kept. As the application has multiple facets being completed
+          simultaneously, they must make sure that everyone is on track to come together at the end. This is their primary role,
+          to make sure there is team cohesion and that deadlines are met. This role is a must for our task as we have strict
+          deadlines that need to be met and we have multiple members on our team who will need someone to manage the team and
+          ensure the product is delivered on time. Will fits this role well, as his desired career path is IT operations
+          management. This project is good for him to work on the skill required for the future.</p>
+        <p><strong>UI developer &ndash; Will, Kristian</strong></p>
+        <p>A User Interface developer works on how the application will look. They create layouts, and graphics, build mock-ups
+          and take care of anything to do with visual design. Essentially anything to do with what the user will see or interact
+          with the UI developer will have under their influence. They must have an intimate knowledge of design and be able to
+          create an experience that is pleasurable to the user. This role is a must for any team building an application because
+          if you want your product to succeed, it must look great and be easy to use. Will and Kristian both have product design
+          and industry experience, so their role in user interface development will significantly support our project.</p>
+        <p><strong>UX developer - Vanessa</strong></p>
+        <p>A user experience developer creates application concepts, studies, and analyses potential users' behaviour, works out
+          scenarios for task flows, outlines wireframes, makes prototypes, and follows a human-centric design. The experience
+          users have with the application is controlled by the UX developer. They will research the habits of likely users to
+          create the best experience possible with the product. The user's experience with the application must be smooth and
+          intuitive to keep people interested, which is why having a UX developer is necessary for a project like this. We want
+          to make sure to target the desired users and that their experience is enjoyable. Vanessa wants to deliver an
+          exceptional experience to the users, and with her, we believe that the users will have an extraordinary time with our
+          application.</p>
+        <p><strong>Backend developer &ndash; Marek, Logan</strong></p>
+        <p>Marek and Logan both show an interest in backend development and security. Their position as backend developers is a
+          perfect fit, as they are eager to learn the technologies needed to complete the required tasks. The backend developer
+          deals with the storage and security of the data, using APIs (application programming interface), building the
+          frameworks and architecture of the application, using databases, managing IDEs (integrated development environment),
+          and collaboration services. The backend developer handles everything behind the scenes, they make sure that the
+          application works and all the different parts work together. Without a backend developer, the application would not be
+          able to run, so this position is a must for our project. As the application will have server-side functions, we need
+          to ensure the process works well to provide an excellent service to the users.</p>
+        <p><strong>Business analyst &ndash; Owais, Milla</strong></p>
+        <p>As we are building the application to be publicly successful, we will need a business analyst on our team to ensure
+          our product is commercially viable. A business analyst researches market trends in the beginning stages of the project
+          to see where the application will fit in the marketplace. By analysing business requirements and goals, they approach
+          the development from a business perspective so that when the application is completed, it can perform well for the
+          public and potential investors. Owais and Milla both show an aptitude for business analytics and will be excellent
+          assets for helping us develop our project into something that will succeed in the marketplace.</p>
+      </div>
+    </section>
+    <!-- Scope and Limits  -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Scope and Limits </h3>
+        <p>The features we will prioritize for our application to make it deliverable to the public will be the motion tracking
+          software done through the camera, having 4 to 5 pre-loaded exercises that the software can track quickly and
+          accurately, creating the framework so the front and backend can communicate efficiently and smoothly, and making an
+          attractive UI user interface to provide the user with a great experience. First, we would need to ensure that the
+          application's primary function works. Therefore, tracking the exercises through the phone's camera and getting
+          real-time feedback is a prime concern for us to deliver a viable product to users. Following this, we need to have at
+          least 4 or 5 pre-loaded exercises so that we are confident the application can map and give the desired outcomes. Once
+          these are completed, we will need to ensure the backend framework and user interface are completed. The user interface
+          is what the user will see and interact with, so we need to ensure this experience is functional and enjoyable.
+          Furthermore, the backend framework must be developed so the front and backend can communicate smoothly, as we will
+          have server-side functions, which is a must. Once these are completed, we will have a viable base product to release
+          to users.</p>
+        <p>As we are limited in time, we would only be able to bring a minimum viable product forward. This means that we would
+          only initially be able to have a few different types of exercises. We would then start with a limited number of
+          exercises at the beginning. Furthermore, we may need more time to fully personalize the experience for each user by
+          having workout plans, nutrition, and complete workout analytics built into the application. To ensure we have a viable
+          product, we will be unable to scale the application depending on the device people use. As higher-end mobile phones
+          will be able to capture and process the workouts much easier than older low-spec phones. We will have to initially
+          release a one size fits all model to begin with. Lastly, as this is a personal project for the team, money will play a
+          significant role in what we can bring forward.</p>
+      </div>
+    </section>
+    <!-- Tools and Technologies -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Tools and Technologies</h3><table class="margin-bottom-400 table-border">
+          <tbody>
+            <tr>
+              <td>
+                <p><strong>Role:</strong></p>
+              </td>
+              <td>
+                <p>Tools used:</p>
+              </td>
+              <td>
+                <p>Experience in group:</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Project manager</strong></p>
+              </td>
+              <td>
+                <p>- Hive</p>
+                <p>- Microsoft Azure</p>
+                <p>- PowerBI</p>
+                <p>- Microsoft Teams</p>
+                <p>- Outlook</p>
+                <p>- Microsoft Excel</p>
+                <p>- Microsoft Visio</p>
+                <p>- Microsoft Word</p>
+                <p>- Google Analytics</p>
+              </td>
+              <td>
+                <p>- Will</p>
+                <p>- Logan</p>
+                <p>- Owais</p>
+                <p>- Milla</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>UI developer</strong></p>
+              </td>
+              <td>
+                <p>- Hive</p>
+                <p>- Microsoft Azure</p>
+                <p>- PowerBI</p>
+                <p>- Microsoft Teams</p>
+                <p>- Outlook</p>
+                <p>- Adobe XD</p>
+                <p>- Figma</p>
+                <p>- Adobe Photoshop</p>
+                <p>- Adobe Illustrator</p>
+              </td>
+              <td>
+                <p>- Will</p>
+                <p>- Vanessa</p>
+                <p>- Logan</p>
+                <p>- Marek</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>UX developer</strong></p>
+              </td>
+              <td>
+                <p>o Hive</p>
+                <p>o Microsoft Azure</p>
+                <p>o PowerBI</p>
+                <p>o Microsoft Teams</p>
+                <p>o Outlook</p>
+                <p>o Adobe XD</p>
+                <p>o Figma</p>
+                <p>o Adopbe Photoshop</p>
+                <p>o Adobe Illustrator</p>
+              </td>
+              <td>
+                <p>- Will</p>
+                <p>- Logan</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Backend developer</strong></p>
+              </td>
+              <td>
+                <p>- Hive</p>
+                <p>- Microsoft Azure</p>
+                <p>- PowerBI</p>
+                <p>- Microsoft Teams</p>
+                <p>- Outlook</p>
+                <p>- Python</p>
+                <p>- JavaScript</p>
+                <p>- MySQL</p>
+              </td>
+              <td>
+                <p>- Kristian</p>
+                <p>- Vanessa</p>
+                <p>- Marek</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Business analyst</strong></p>
+              </td>
+              <td>
+                <p>- Hive</p>
+                <p>- Microsoft Azure</p>
+                <p>- PowerBI</p>
+                <p>- Microsoft Teams</p>
+                <p>- Microsoft Excel</p>
+                <p>- Microsoft Visio</p>
+                <p>- Outlook</p>
+                <p>- Microsoft Word</p>
+                <p>- MySQL</p>
+              </td>
+              <td>
+                <p>- Will</p>
+                <p>- Owais</p>
+                <p>- Milla</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Marketing Consultant </strong></p>
+              </td>
+              <td>
+                <p>- Hive</p>
+                <p>- Microsoft Azure</p>
+                <p>- PowerBI</p>
+                <p>- Microsoft Teams</p>
+                <p>- Outlook</p>
+                <p>- Instagram</p>
+                <p>- Facebook</p>
+                <p>- Tik Tok</p>
+                <p>- SEMrush</p>
+                <p>- Google Ads</p>
+                <p>- Google Analytics.</p>
+              </td>
+              <td>
+                <p>- Will</p>
+                <p>- Vanessa</p>
+                <p>- Logan</p>
+                <p>- Owais</p>
+                <p>- Milla</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Kristian has lots of experience in using software tools and technologies, as it is a great passion for him. This
+          passion started when he first took a Java programming class in year 12 and has grown ever since. From there, he
+          self-learned many languages, such as Javascript, C#, F#, SQL and many more. Kristian currently works as a technical
+          Consultant at DXC technologies, where he uses Microsoft programs such as Azure, PowerBI, Teams and outlook.</p>
+        <p>Marek currently works with a model-making studio in Perth, where he helps produce realistic illustrations and
+          wireframes using key software such as Figma and Adobe Photoshop. Marek also utilises Outlook and Teams for everyday
+          communications between team members and potential consumers who want to create their own models.</p>
+        <p>Logan has full experience in the Microsoft suite, and this is due partially to his work experience and his day-to-day
+          life activities. He also uses Facebook and Instagram daily to update and post about his personal life, which has given
+          him experience using different types of social media applications. He also created posters / Graphic images of his
+          favourite football players from St Kilda during high school; for this, he used Adobe Photoshop and Illustrator.</p>
+        <p>Milla is originally from Finland, so to talk to her friends from Finland, she utilises Teams and Outlook to keep in
+          touch with them. She also uses these programs at work to do her day-to-day activities. Milla also has experience in
+          using Photoshop and Illustrator as she designed mock-up app designs, pamphlets and posters for a Personal Training
+          course that she completed.</p>
+        <p>Vanessa&rsquo;s vast experience from her past jobs has allowed her to be able to use multiple software programs
+          mentioned in the above table. From using C# and JavaScript as a software engineer to using Google Analytics and
+          Microsoft Azure in her role in Medical Science. Vanessa also has experience using Adobe Suite and Figma while studying
+          various Graphic Design units in high school and college.</p>
+        <p>Owais has some experience in using Adobe Photoshop and illustrator from his time in high school, where he studied IT
+          and Graphic design units. For these units, he created many posters, visual concepts and websites for his class
+          assignments utilising these programs. He also has experience using Microsoft Teams and Outlook due to his current role
+          as a Business Support Officer at the Department of Defence. Also, in his position, he creates financial reports using
+          Microsoft Excel and has used Microsoft word to draft briefings for his directors. In his personal life, Owais loves
+          using social media and can be seen as somewhat of a fanatic, creating videos and posts on Instagram, TikTok and
+          Facebook about his personal life and interests.</p>
+        <p>Will is currently employed as an Administration and IT operations consultant, where he had the pleasure of using a
+          vast range of IT programs, including but not limited to: Microsoft Azure, Microsoft PowerPoint, Google Analytics and
+          Google Ads. Will also worked for a not-for-profit organisation and had to create posters and pamphlets for the
+          organisation To do this, he used Adobe Photoshop and Illustrator; he also oversaw the organisation&rsquo;s social
+          media presence and made daily posts on Facebook for them. Before becoming an IT operations consultant, Will did data
+          entry work using Microsoft Excel. Will also has experience in using Instagram as he loves to update his friends and
+          family about his whereabouts and what he eats for lunch!</p>
+        </div>
+    </section>
+    <!-- Testing -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Testing</h3>
+        <p>Testing is crucial aspect of software development and can directly affect all aspects of development from the speed
+          of releases and to the overall success of a new release.</p>
+        <p>The two main categories of testing are automated and manual testing. Manual testing is done buy a person who is
+          actively using the app, often in the context of checking the overall user experience is good and assuring that the
+          basic business requirements are being met from the perspective of those using the application. Automated testing
+          typically refers to the many methods of using testing code to automatically check various aspects of your project from
+          the results returned from your API&rsquo;s, the integrity of your validation code and the interactions between your
+          different modules such as the front end connecting to API which in turn connects to the database.</p>
+        <p>Unit Testing is the simplest form of automated testing we can implement and should always be added from the very
+          beginning. Unit tests are typically pretty low level and are used to test code in isolation from the rest of the
+          system; For example, if we have a function call that is meant to return a set of data based on a given user ID, a
+          simple unit test we can add might pass in a valid user and assert that some valid data is received in return, or to
+          pass in an invalid user id and assert that the error is handled properly and correct error data is returned. Unit
+          testing can be done by a user running software on their local machine, but can also be tied into the build process
+          itself; i.e., if any unit tests fail, the build process is halted and the engineers are informed. This will be our
+          main form of testing in the early stages of development while building our API.</p>
+        <img src="/RMIT-IITA3/images/plan-testing-1.png" alt="" height="500px">
+        <p><em>Figure 1: An example of a function with its associated Unit Test and its result</em></p>
+        <p>Integration tests and Functional tests have a broader focus than unit testing. For example, if we have an application
+          which is installed on device X, which connects to an API that is hosted on server Y, which then connects to the
+          database hosted on server Z, we need to know that all of these modules are talking to each other successfully. This is
+          where integration testing comes in. Functional testing on the other hand is more focused around the overall
+          business/user experience and whether the output matches what is expected during typical use and less so on the state
+          of individual modules.</p>
+        <p>A further extension of functional testing is end-to-end testing. This is meant to completely replicate how a user
+          would experience the application and can be either manually tested or done automatically. A typical end-to-end test
+          might be to open the application and log into your user account. Open pages x,y and z, change some settings and then
+          make a post. End-to-end testing is a lot harder/more expensive to maintain as an application evolves. In the early
+          stages of development, these jobs will typically be small enough that they can be done manually by the developers as
+          they build the functionality, but as complexity grows and the project matures, we will need to start automating some
+          of this process and have some dedicated testers.</p>
+        <p>Another important aspect of testing a large-scale project is performance testing. How many users are using the
+          application at once? How many API calls are made in a typical session on the app? And how many of these calls are
+          doing read or write operations to the database? Performance testing answers a lot of these questions with a good
+          degree of accuracy and allow for proper planning/maintenance of networking infrastructure. A fantastic example of a
+          great performance testing tool is Microsoft Azure&rsquo;s Monitoring tool, which has features such as Application
+          Insights, Log Analytics and VM Insights.</p>
+        <p>The Azure Monitor tracks and analyses all telemetry from your cloud and on-premises environments and uses tooling to
+          provide helpful real time information and advice on where bottlenecks are, which resources can be expanded such as the
+          number of VMs running your services. It can also build up a visualisation of all the components of your project and
+          provide information on how the interact with each other,</p>
+        <p>Performance testing like this is an important stage to keep in mind as we are developing our infrastructure. We
+          don&rsquo;t want to undercut the performance of our application to save money on resources, but we also don&rsquo;t
+          want to fire up too many unnecessary VMs if we don&rsquo;t need to. Performance testing will be done from the
+          beginning as we start to build up our testing environments and move into production.</p>
+        <img src="/RMIT-IITA3/images/plan-testing-2.png" alt="" height="300px">
+        <p><em>Figure 2: Azure Application insights showing application map</em></p>
+        <p>Something we can&rsquo;t forget during development is that this application needs to easy to navigate and fun or
+          interesting to use. It does not matter how great your product is, if it is painful to use, people will not make use of
+          it. It will be very important in the early stages to test our designs on our target demographic.<br /> &nbsp;Initially
+          we can rely on family and friends who use the gym to test our product for us, but as we move past the
+          &lsquo;alpha&rsquo; stage and into &lsquo;beta&rsquo; we will likely need to reach out to actual users. <br /> Our
+          plan for beta testing and getting initial interest in our product is to reach out locally to nearby gyms and weight
+          lifting clubs. We can offer them X months of free usage and in return they will help us test the application and
+          provide feedback. This is a win/win as they get free usage of our product and we get in return real feedback from our
+          target demographic as well as potentially building an initial user/fanbase.</p>
+      </div>
+    </section>
+    <!-- Timeframe -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Timeframe</h3>
+        <img src="/RMIT-IITA3/images/plan-timeframe.png" alt="">
+      </div>
+    </section>
+    <!-- Risks  -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Risks</h3>
+        <p>With anything in life, a certain amount of risk is involved in any action, and when it comes to creating our project,
+          it is no different. Therefore Risk management is key to ensuring our project is a great success. Common risks such as
+          computers breaking down, software not working properly, and staff health issues are generic risks. These risks will
+          still affect the project, however below are the risks that are more relatable to our project:</p>
+        <p><strong>Creating an application that does not work:</strong> As we have promised to overdeliver in this project with
+          the features we have, we must be able to create and run the features we have promised our users and investors. If the
+          application fails to have the features we promised, it will pose a significant threat regarding how profitable and
+          usable the application is.</p>
+        <p><strong>Poor UX/UI</strong>: If we can integrate our promised features into the application, this will be great;
+          however, the application needs to run the software for the application in a timely and smooth manner. Failure to do
+          this will result in an application that is buggy and slow, which means users will less likely use the application and
+          leave bad reviews for it. This will then bring the profitability of the application, which will displease users and
+          investors. In the UX/UI development phase of our application, the developers must spend time and effort creating a
+          smooth and bug-free application; otherwise risk facing the consequences.</p>
+        <p><strong>Data security risks:</strong> When storing data and especially user data, we must outline security measures
+          to avoid any data breaches through cyberattacks or internal leaks. Therefore the project team must involve
+          cybersecurity specialists to constantly patch the software, protect the IT infrastructure and its assets and also
+          monitor any data breaches. Failure to do so means that we lose important user data to cyber-attacks, which will result
+          in a loss of trust from users and investors and essentially ruin our project.</p>
+        <p><strong>Injuring oneself while using our application:</strong> As our project is based around the health and fitness
+          industry and requires users to perform exercises, we will need to create extensive terms and conditions, which users
+          must agree on before using the application. This is because if a user is to hurt themselves using the application,
+          they may be entitled to compensation from us as we are informing the user on how to do an exercise. If the project is
+          taken to court for injury compensation, it may result in the project going bust for the payout/s.</p>
+      </div>
+    </section>
+    <!-- Group processes and communications  -->
+    <section class="margin-bottom-700">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Group processes and communications </h3>
+        <p>Our group has chosen to communicate through Microsoft teams with clearly structured 30-minute to 1-hour long
+          meetings. Attendance at these meetings, held weekly, often on Wednesday, is the absolute bare minimum requirement that
+          our group has set as a compulsory standard. In the initial project meetings, requirements are run through all together
+          as a group with an outline of delegated tasks and responsibilities are discussed and documented so that the entire
+          group is on the same page. In conjunction with this, the group discusses and agrees upon a set timeframe and timeline
+          of tasks and when they can be expected to be finished. We set firm midway project check-in where 50% of the project is
+          required, a soft check-in date where the project is set to be finished and then we have the final deadline as a
+          worst-case submission time if anything needs to be fixed up. These meetings are recorded for members that were not
+          able to be present, with an automatically generated transcript also available. At the end of each meeting, Will goes
+          over the meeting notes and outlines the updates in weekly delegated responsibilities.&nbsp;</p>
+        <p>In addition to this, we also use a group chat on Microsoft teams to communicate with each other about any updates,
+          questions and concerns we might have. This space also facilitates informal contributions to documents that can aid in
+          improving the document or provide further context for the other group members to help contribute to their delegated
+          sections and responsibilities.</p>
+        <p>Should there be a member of the group that is found to not be pulling their weight or completely fails to meet
+          expectations by primarily the midway check in but also including the soft due date, mitigation by a third-party
+          representative is sought out to help provide a solution. This process is aimed to be sought out shortly after the
+          midway check-in if the group member has failed to meet expectations and/or the group has lost communication with said
+          member. That being said, if this were to happen, the ideal scenario would be that the group member is reminded and
+          notified of the expectation and requirements agreed upon at the start of the project. They are then given 24-48 hours
+          to meet requirements without a group representative having to reach out to a third-party representative. In the event
+          of unexpected loss of communication with a group member, a group representative is to attempt to make contact at
+          minimum by a private message on Microsoft Teams and via email to the member's student email before seeking alternate
+          arrangements.</p>
+        <p>All work is to be produced in the shared drive that all group members have access to and is stored in the cloud for
+          version history. Within this drive, the group members are to work solely on the specific projects master document and
+          house any files/attachments in folders within the shared drive. This provides the entire group with the same content,
+          file history of members' contributions for tracking changes, and redundancy from a single point of failure. The excuse
+          of losing work that was not saved within the drive is not accepted and is rejected by the group as in the case the
+          member has failed to follow production procedure as agreed upon by all members of the project.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="primary-footer padding-block-700 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <div class="margin-bottom-400">
+            <a href="#"><img src="/RMIT-IITA3/images/RMIT_University_Logo_Inverted.svg" alt="RMIT"
+                class="rmit-logo footer-rmit-logo"></a>
+          </div>
+          <p>IIT Assessment 3 Group 9: The Interstaters</p>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="nav-list">
+              <li><a href="/RMIT-IITA3">Team Profile</a></li>
+              <li><a href="/RMIT-IITA3/tools">Tools</a></li>
+              <li><a href="/RMIT-IITA3/projectplan">Project Plan</a></li>
+              <li><a href="/RMIT-IITA3/skillsandjobs">Skills & Jobs</a></li>
+              <li><a href="/RMIT-IITA3/groupreflection">Group Reflection</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="primary-footer-form">
+          <!-- dummy form -->
+          <form class="margin-bottom-400" action="">
+            <input type="email" placeholder="Updates in your inbox">
+            <button class="button" data-shadow="none">Go</button>
+          </form>
+          <div class="text-center-sm">
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/kvines4/RMIT-IITA3">Check out the git repo here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

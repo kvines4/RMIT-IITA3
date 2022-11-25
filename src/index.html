@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Assessment Task 3 Group # 9</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Assessment Task 3 Group # 9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- borrowed favicon from canvas lol -->
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://instructure-uploads-apse2.s3.ap-southeast-2.amazonaws.com/account_95950000000000001/attachments/25576945/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+  <script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- borrowed from https://commons.wikimedia.org/wiki/File:RMIT_University_Logo.svg -->
+        <a href="#"><img src="/images/RMIT_University_Logo.svg" alt="RMIT" class="rmit-logo"> </a>
+        <!-- menu toggle. only visible in mobile -->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="nav-list" class="nav-list">
+            <li><a href="/RMIT-IITA3">Team Profile</a></li>
+            <li><a href="/RMIT-IITA3/tools">Tools</a></li>
+            <li><a href="/RMIT-IITA3/projectplan">Project Plan</a></li>
+            <li><a href="/RMIT-IITA3/skillsandjobs">Skills & Jobs</a></li>
+            <li><a href="/RMIT-IITA3/groupreflection">Group Reflection</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Team Profile -->
+    <section class="carousel padding-block-700 text-center">
+      <div class="container-slider">
+        <h2 class="fs-primary-heading fw-bold ">IIT Assessment 3 Group 9: The Interstaters</h2>
+        <ul class="slider">
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-owais.png" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Ansari, Owais</h3>
+              <p>Canberra ACT</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-will.png" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Berger, Will</h3>
+              <p>Melbourne, VIC</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-logan.jpg" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Hosking, Logan</h3>
+              <p>Bendigo, VIC</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-marek.jpg" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Ivanov, Marek</h3>
+              <p>Perth, WA</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-milla.png" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Kinnuen, Milla</h3>
+              <p>Sydney, NSW</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-kristian.jpg" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Vines, Kristian</h3>
+              <p>Hobart, TAS</p>
+            </div>
+          </li>
+          <li>
+            <div class="profile-image">
+              <a>
+                <img src="/images/profile-vanessa.png" alt="">
+              </a>
+            </div>
+            <div class="slider-content flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Wang, Vanessa</h3>
+              <p>Sydney, NSW</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Personal -->
+    <section class="padding-block-500">
+      <div class="container">
+        <h2 class="fs-secondary-heading margin-bottom-400">Team Profile</h2>
+        <h3 class="fs-600 fw-bold">Personal</h3>
+        <div class="even-columns">
+          <div class="flow">
+            <p>Kristian Vines is from Hobart, Tasmania. His student number is S3975623 and his student email is
+              <a href="mailto:S3975623@student.rmit.edu.au">S3975623@student.rmit.edu.au</a>. Programming has been his passion for
+              many years, and he considers it one of his primary hobbies. Most of his programming knowledge is self-taught, although
+              he has some formal education as a former student for a Bachelor of ICT at the University of Tasmania. He hopes to
+              complete his IT studies through RMIT online. His favourite foods are Italian and Eastern Asian dishes &ndash; mainly
+              pizzas and spicy noodle soups. Outside of technology, his next biggest passion would be powerlifting, a sport he has
+              participated in since 2016.
+            </p>
+            <p>Marek Ivanov is from Estonia and studied electrotechnology after Year 12. His student number is s3925058, and his
+              student email is <a href="mailto:s3925058@student.rmit.edu.com.au">s3925058@student.rmit.edu.com.au</a>. He is a
+              hands-on learner who enjoys tinkering with electrical instruments. He has had numerous careers over the years, and at
+              34 years of age, he is looking for something stable to settle down with. He currently works at a model-making studio
+              in Perth that produces realistic models utilising all sorts of technologies, from 3D sculpting in ZBrush to 3D
+              printing life-sized sharks. He is unsure of where his studies at RMIT will take him, but he is eager to learn and
+              interested in AI.</p>
+            <p>Vanessa Wang is from Sydney, Australia. Her student number is s3930916, and her student email is 
+              <a href="mailto:s3930916@student.rmit.edu.au">s3930916@student.rmit.edu.au</a>. She has worked several other jobs prior
+              to her study at RMIT, such as a medical laboratory technician (MLT), and much of her former education is based on
+              medical science. She also previously worked as a software engineer but had to leave the position due to conflicts with
+              her personal life. She has a strong interest in cinema and has seen over a thousand films. She has been interested in
+              IT since a young age, but parental pressures forced her to pursue medicine instead.</p>
+            <p>Will Berger currently works as an Administration and IT operations consultant. His student number is s3697728, and
+              his student email is <a href="mailto:will.berger@student.rmit.edu.au">will.berger@student.rmit.edu.au</a>. Since being
+              first introduced to it in primary school, he has always had a strong passion for IT. He worked on countless personal
+              projects, with his main interest in infrastructure design, implementation and deployment, including networking and
+              virtualisation. He chose RMIT as it is an industry-leading educator when it comes to IT, and being able to do the
+              course online works well with his work life. He believes it will be an excellent opportunity to learn the fundamentals
+              of many different areas of IT. He is a beginner-intermediate level in Italian and owns a Siberian Husky named Mishka,
+              whose favourite thing to do is to ride in his Jeep with the roof off along the beach.</p>
+          </div>
+          <div class="flow">
+            <p>Logan Hosking was born and raised in Victoria, Australia. His student number is s3976923, and his student email is 
+              <a href="mailto:s3976923@student.rmit.edu.au">s3976923@student.rmit.edu.au</a>. He graduated high school in 2011 at
+              Catholic College in Bendigo and moved to Ballarat for university studies but realised this was not for him then. He
+              worked in finance and real estate for a few years before working in Japan for four years, mainly teaching English. His
+              time in Japan led to his developing an interest in technology as he formed friendships with people in the IT industry.
+              His hobbies include consuming science fiction and fantasy media. He also follows the St. Kilda football club.</p>
+            <p>Milla Kinnunen is a 26-year-old originally from Finland. Her student number is S3980991, and her student email is 
+              <a href="mailto:s3980991@student.rmit.edu.au">s3980991@student.rmit.edu.au</a>. She has been in Australia for over
+              eight years and is about to receive her citizenship. She has previously completed subjects through Open University and
+              finished the Personal Training course. She can speak four different languages and can play the piano and violin. Her
+              curiosity in IT was sparked when she worked at a job for accounting software and decided to make a career in it. She
+              loves how the IT field has many opportunities and allows her to work from anywhere remotely. She chose RMIT because
+              she wants the option of studying online and having the flexibility for her time.</p>
+            <p>Owais Ansar is a 23-year-old currently residing in Canberra, Australia. His student number is s3980135, and his
+              student email address is <a href="mailto:s3980135@student.emit.edu.au">s3980135@student.emit.edu.au</a>. Both his
+              parents were born in Pakistan and moved to Australia in 1998, one year before he was born. His highest education was a
+              Year 12 certificate in 2017. He speaks English and Urdu, and can read and write in Arabic. Fun facts about him are
+              that he is double-jointed in both arms and can rotate them at almost 360 degrees. He is also a massive fan of
+              Manchester United Football Club. His main interests in IT are cybersecurity and ethical hacking, and he can see
+              himself working in them in the future. His interest in IT first came to him while studying at his previous university
+              for a Bachelor of Business (majoring in Marketing).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tests -->
+    <section class="padding-block-500">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Tests</h3>
+        <div class="even-columns">
+          <div class="flow">
+            <p>Kristian is an INFP-T, his learning style is visual, and he scored 120/200 on the ARealMe.com EQ test. He finds it
+              difficult to grasp information verbally and prefers to read and have diagrams to grasp a complex idea completely. He
+              does not believe that his test results will influence his behaviours in a team as he already has much experience from
+              his previous work experience. However, he sees it as beneficial to know how to improve in areas where he is weaker.
+            </p>
+            <p>While forming a team, personality types should be taken into account. Marek is an INFP-A, his learning style is
+              tactile, and the IPIP Big Five Factor Markers indicate him being more drawn to introversion with a high degree of
+              emotional stability. His lower agreeableness and conscientiousness scores also indicate a greater level of impulsivity
+              and disorganisation. He is someone who learns better from reading than listening. His personality is more inclined
+              towards disorganisation and introversion, so a team should have a solid structure with all the roles made clear.</p>
+            <p>Vanessa is an INTP-T, her learning style is visual, and the IPIP Big Five Factor Markers indicate her being more
+              drawn to introversion with low emotional stability. She does not learn well from listening to others and would prefer
+              to be delegated written instructions and to work on them in her own time. She finds working in teams complex due to
+              her introversion but is willing to work on this skill deficit. She is highly driven and will aim to complete all tasks
+              required of her before deadlines.</p>
+          </div>
+          <div class="flow">
+            <p>Logan is an ENTJ-A, his learning style is auditory/tactile, and the IPIP Big Five Factor Markers indicate him being
+              more drawn to extroversion with a high degree of emotional stability. He believes he would work well with others who
+              like to be active and practical about completing tasks. He states that he may disagree with others who exhibit
+              leadership qualities, but at the same time, he hopes to work with people who can stand up to him during disagreements.
+              As he takes a more tactile and methodical approach, he should aim to pair with more creative people, as that is his
+              weakness.</p>
+            <p>Milla is an ISTJ, her learning style is auditory, and her creativity test indicates that she is not very creative.
+              Her advantage is to follow the duties required of her religiously. Her weakness is that she is naturally introverted,
+              as she would instead work separately on tasks than collaborate in a group. The best setting for her would be getting a
+              delegated job and completing it independently, only discussing necessities in a group setting.</p>
+            <p>Owais is an ENFP-A, his learning style is kinaesthetic, and he scored a high level of agreeableness on the IPIP Five
+              Factor Markers. He is skilled at improvisation, which can be good or bad in team environments. He can come up with
+              solutions to problems but may also be too flexible that it would cause disruptions and make the group unable to follow
+              deadlines. He is concerned about how agreeable the other people in the group would be to pursue collaboration. He
+              believes that joining a team with a diverse range of skills and behaviours would be essential.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Group Processes -->
+    <section class="padding-block-500">
+      <div class="container">
+        <h3 class="fs-600 fw-bold">Group Processes </h3>
+        <p>The group worked well overall due to the desire on the part of everybody to collaborate and complete their part of
+          the work. Technical difficulties and lack of availability to participate in some meetings due to other commitments
+          were the main hindrance to collaboration. To mitigate this issue in the future, more clear meeting times in the future
+          and communication through other means outside of meetings were established. Speaking more often in discussions among
+          all team members has also increased after feedback from intra-group review was considered. These changes in the group
+          process allow for greater coordination.</p>
+      </div>
+    </section>
+    <!-- Career Plans -->
+    <section class="padding-block-500">
+      <div class="container">
+        <h2 class="fs-secondary-heading margin-bottom-400">Career Plans </h2>
+        <p>The ideal jobs for the team are as sorted into this table:</p>
+        <table class="margin-bottom-400 table-border">
+        <tbody>
+        <tr>
+        <td><p class="fw-bold">Information Security Consultant</p></td>
+        <td><p class="fw-bold">Operations Manager</p></td>
+        <td><p class="fw-bold">Senior Software Engineer</p></td>
+        <td><p class="fw-bold">Solutions Engineer</p></td>
+        </tr>
+        <tr>
+        <td><p>Milla</p></td>
+        <td><p>Will</p></td>
+        <td><p>Kristian</p></td>
+        <td><p>Marek</p>
+        </td>
+        </tr>
+        <tr>
+        <td><p>Owais</p></td>
+        <td></td><td><p>Vanessa</p>
+        </td><td></td></tr>
+        <tr>
+        <td><p>Logan</p></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <p>Information Security Consultants are IT professionals responsible for implementing cybersecurity solutions to fulfil
+          the needs of an organisation. Information security consultants have to perform duties to protect a business and
+          educate the people within that business on the proper actions to take in various circumstances. Information security
+          consultants may be required to demonstrate many certifications in addition to their degrees or experience, as their
+          employment position carries a greater risk if performed inadequately.</p>
+        <p>IT operations managers maintain control over IT services and oversee the functionality of the underlying network
+          infrastructure and systems. Compared to the other roles, they are expected to understand networking and be more
+          involved with hardware maintenance, such as ensuring proper ventilation or working out solutions to power outages</p>
+        <p>Senior software engineers are highly experienced engineers who develop information systems by being able to resolve
+          complex software issues, understand and build architecture, and can lead software engineering teams. Software
+          engineers are highly diverse in their work and come from diverse backgrounds. Compared to the other roles, their
+          primary responsibility is programming.</p>
+        <p>Solutions engineers are IT professionals who interface between the business and clients. They have the technology and
+          business skills to help communicate between the parties and implement solutions. The solutions engineer role differs
+          from the others with its higher level of interpersonal and business skills required.</p>
+        <p>These roles all differ, but the core similarity they share is that they require a lot of communication with others
+          while working with technology. The IT industry has a reputation for being introverted and asocial, but in reality, a
+          significant amount of teamwork and collaboration is involved. The solutions engineer must be capable with talking to
+          clients; the senior software engineer must effectively work with other software engineers, etc.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="primary-footer padding-block-700 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <div class="margin-bottom-400">
+            <a href="#"><img src="/images/RMIT_University_Logo_Inverted.svg" alt="RMIT" class="rmit-logo footer-rmit-logo"></a>
+          </div>
+          <p>IIT Assessment 3 Group 9: The Interstaters</p>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="nav-list">
+              <li><a href="/RMIT-IITA3">Team Profile</a></li>
+              <li><a href="/RMIT-IITA3/tools">Tools</a></li>
+              <li><a href="/RMIT-IITA3/projectplan">Project Plan</a></li>
+              <li><a href="/RMIT-IITA3/skillsandjobs">Skills & Jobs</a></li>
+              <li><a href="/RMIT-IITA3/groupreflection">Group Reflection</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="primary-footer-form">
+          <!-- dummy form -->
+          <form class="margin-bottom-400" action="">
+            <input type="email" placeholder="Updates in your inbox">
+            <button class="button" data-shadow="none">Go</button>
+          </form>
+          <div class="text-center-sm">
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/kvines4/RMIT-IITA3">Check out the git repo here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
